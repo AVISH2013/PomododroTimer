@@ -20,7 +20,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps && npx expo install react-dom react-native-web
+        run: npm install --force
 
       - name: Build web
         run: npm run build:web
